@@ -10,8 +10,8 @@
         </head>
         <body>
             <div id="container"></div>
-            <script src="app.js"></script> 
-            <link rel="stylesheet" href="main.css">
+            <script src="https://github.com/earthat/ExtractComments/html/app.js"></script> 
+            <link rel="stylesheet" href="https://github.com/earthat/ExtractComments/html/main.css">
         </body>
         <!-- Other embed HTML element/text into SVG -->
     </div>
