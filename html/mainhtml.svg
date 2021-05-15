@@ -6,13 +6,11 @@
             <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
             <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
             <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
+             <script src="https://github.com/earthat/ExtractComments/html/app.js"></script> 
+            <link rel="stylesheet" href="https://github.com/earthat/ExtractComments/html/main.css">
             <style type="text/css"></style>
         </head>
-        <body>
-            <div id="container"></div>
-            <script src="https://github.com/earthat/ExtractComments/html/app.js"></script> 
-            <link rel="stylesheet" href="https://github.com/earthat/ExtractComments/html/main.css">
-        </body>
+        
         <!-- Other embed HTML element/text into SVG -->
     </div>
 </foreignObject>
