@@ -1,15 +1,122 @@
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
 <foreignObject width="100" height="100">
     <div xmlns="http://www.w3.org/1999/xhtml">
-        <style type="text/css"></style>
-        <head>
-            <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
-            <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
-            <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
-             <script src="https://github.com/earthat/ExtractComments/html/app.js"></script> 
-            <link rel="stylesheet" href="https://github.com/earthat/ExtractComments/html/main.css">
-            <style type="text/css"></style>
-        </head>
+        <div id="anychart-embed-samples-bct-network-graph-12" class="anychart-embed anychart-embed-samples-bct-network-graph-12">
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-graph.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+<div id="ac_style_samples-bct-network-graph-12" style="display:none;">
+html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+</div>
+<script>(function(){
+function ac_add_to_head(el){
+	var head = document.getElementsByTagName('head')[0];
+	head.insertBefore(el,head.firstChild);
+}
+function ac_add_link(url){
+	var el = document.createElement('link');
+	el.rel='stylesheet';el.type='text/css';el.media='all';el.href=url;
+	ac_add_to_head(el);
+}
+function ac_add_style(css){
+	var ac_style = document.createElement('style');
+	if (ac_style.styleSheet) ac_style.styleSheet.cssText = css;
+	else ac_style.appendChild(document.createTextNode(css));
+	ac_add_to_head(ac_style);
+}
+ac_add_link('https://cdn.anychart.com/releases/8.9.0/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4');
+ac_add_style(document.getElementById("ac_style_samples-bct-network-graph-12").innerHTML);
+ac_add_style(".anychart-embed-samples-bct-network-graph-12{width:600px;height:450px;}");
+})();</script>
+<div id="container"></div>
+<script>
+anychart.onDocumentReady(function () {
+
+    // create data
+    var data =                { 
+       nodes: [ 
+{id: "avgVelcoity", Description: "  function to calculate average velocity   relative velocity for each vehicle"}, 
+{id: "avgDistancelevel", Description: "  this function calculates the ADL. The nodes in a cluster are considered only"}, 
+{id: "CScredits", Description: "  OFDM network Enviornment  Set the simulation parameters."}, 
+{id: "spectrumSensing", Description: "  generate LDPC encoder and decoder object  save frameSize frameSize  H = sparse([genH(floor(frameSize(1)/2),floor(frameSize(1)/2)) genLowTri(floor(frameSize(1)/2))]);  hEnc = comm.LDPCEncoder(H);"}, 
+{id: "spectrumSensing_Attack", Description: "  generate LDPC encoder and decoder object"}, 
+{id: "nwconnectlevel", Description: "   this function calculated the network connectivity level     total nodes in vicinity of each nodes in each flow"}, 
+{id: "laneWeight", Description: "   function to calculate lane weights for each traffic flow"}, 
+{id: "main", Description: "   this code implements the road junction scenario. Few vehicles at the junction take turn at right hand side. The continuous cluster head  selection by fuzzy logic is implemented. White colored vehicle which pop up during simulation in each lane is the elected cluster head. Initial speed of every vehicle is different i.e.[80,100]"}, 
+{id: "resultsPlot1", Description: "resultsPlot1 is a function.    resultsPlot1(nodes, RSU)"}, 
+{id: "checkExit", Description: "checkExit is a function.    nodes = checkExit(nodes, highwayL)"}, 
+{id: "distance_nodetoRSU", Description: "   function to calculate the distance of each node to each RSU and to check  is vehicle is in range of RSU"}, 
+{id: "distance_nodetonode", Description: "   function to calculate the distance of each node to each RSU and to check  is vehicle is in range of RSU  for LtoR"}, 
+{id: "genH", Description: "genH is a function.    [H] = genH(rows, cols)"}, 
+{id: "genLowTri", Description: "genLowTri is a function.    LowTri = genLowTri(n)"}, 
+{id: "initializevehicles", Description: "  function to initilaise vehciles' psoitions at each road"}, 
+{id: "normalize", Description: "normalize - Normalize filter numerator or feed-forward coefficients    This MATLAB function normalizes the filter numerator coefficients for a    quantized filter to have values between -1 and 1.    normalize(hq)    g = normalize(hd)    See also denormalize    Documentation for normalize       doc normalize"}, 
+             ], 
+       edges: [ 
+      {from: "avgVelcoity", to: "main"}, 
+ {from: "avgDistancelevel", to: "main"}, 
+        {from: "CScredits", to: "main"}, 
+{from: "spectrumSensing", to: "CScredits"}, 
+   {from: "nwconnectlevel", to: "main"}, 
+       {from: "laneWeight", to: "main"}, 
+     {from: "resultsPlot1", to: "main"}, 
+        {from: "checkExit", to: "main"}, 
+{from: "distance_nodetoRSU", to: "main"}, 
+{from: "distance_nodetonode", to: "main"}, 
+{from: "genH", to: "spectrumSensing_Attack"}, 
+{from: "genLowTri", to: "spectrumSensing_Attack"}, 
+{from: "initializevehicles", to: "main"}, 
+ {from: "normalize", to: "avgVelcoity"}, 
+{from: "normalize", to: "avgDistancelevel"}, 
+   {from: "normalize", to: "CScredits"}, 
+{from: "normalize", to: "nwconnectlevel"}, 
+             ], 
+     } 
+
+
+;
+
+    // create a chart and set the data
+    var chart = anychart.graph(data);
+
+    // prevent zooming the chart with the mouse wheel
+    chart.interactivity().zoomOnMouseWheel(false);
+    
+    // enable labels of nodes
+    chart.nodes().labels().enabled(true);
+
+    // configure labels of nodes
+    chart.nodes().labels().format("{%id}");
+    chart.nodes().labels().fontSize(12);
+    chart.nodes().labels().fontWeight(600);
+
+    // configure tooltips of nodes
+    chart.nodes().tooltip().useHtml(true);
+    chart.nodes().tooltip().format(
+      "<span style='font-weight:bold'>{%id} {%last_name}</span><br>Description: {%Description}"
+    );
+
+    // configure tooltips of edges
+    chart.edges().tooltip().format("{%from} -> {%to}");
+
+    // set the chart title
+    chart.title("Code Dependency on Custom Functions. Hover the mouse over nodes to get the function description");
+    
+
+    // set the container id
+    chart.container("container");
+
+    // initiate drawing the chart
+    chart.draw();
+});
+</script>
+</div>
         
         <!-- Other embed HTML element/text into SVG -->
     </div>
