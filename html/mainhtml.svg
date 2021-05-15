@@ -8,7 +8,11 @@
             <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
             <style type="text/css"></style>
         </head>
-        
+        <body>
+            <div id="container"></div>
+            <script src="app.js"></script> 
+            <link rel="stylesheet" href="main.css">
+        </body>
         <!-- Other embed HTML element/text into SVG -->
     </div>
 </foreignObject>
